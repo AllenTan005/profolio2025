@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-koulen: 'Koulen', sans-serif;
+   --font-Kantumruy: "Kantumruy Pro", sans-serif;
+}
