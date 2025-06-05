@@ -125,16 +125,14 @@ const indexOfProject = ref(null)
 const listOfProject = ref([
 {
     title:'Backstage',
-    desc:"It is a long establism is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English1-2.",
+    desc:"'Backstage' is a web application that functions as the Content Management System (CMS) or administration panel for the '瓶蓋工廠-App' (Bottle Cap Factory App). Its primary purpose is to empower authorized personnel (e.g., exhibition staff, event organizers, retail managers) to manage all the dynamic content and operational data that is displayed and utilized within the public-facing mobile app.",
      image:[
-
-
-      ]
+     ]
    
 },
 {
     title:'PowerBox',
-    desc:"It is a long establism is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English2.",
+    desc:"Trend Micro PowerBox: A Secure, Enterprise-Grade Cloud File Exchange Platform From the context and search results, PowerBox appears to be a specialized secure cloud storage and file exchange platform developed by Trend Micro, a global leader in cybersecurity. While it offers functionalities akin to consumer-grade cloud services like Google Drive, its primary differentiator and core value proposition lie in its integrated, robust security features tailored for business and enterprise environments.",
     image:[
         pboxphoto,
         pboxphoto2,
@@ -142,8 +140,8 @@ const listOfProject = ref([
     ]
 },
 {
-    title:'App',
-    desc:"It is a long establism is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English3-4.",
+    title:'瓶蓋工廠-App',
+    desc:"The '瓶蓋工廠-App' (Bottle Cap Factory App) is designed as a multi-functional mobile application aimed at enhancing the visitor experience at an exhibition center, while also providing tools for event management and retail operations. It combines interactive guidance with practical information and commerce capabilities, transforming the physical space into a more engaging and digitally-supported environment.",
      image:[
       appphoto,
       appphoto2,
@@ -152,16 +150,14 @@ const listOfProject = ref([
 },
 {
     title:'PowerBi-Copliot',
-    desc:"It is a long establism is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English4-4.",
+    desc:"Powerbi-bi-copilot is an application designed to automate and simplify the process of creating data visualizations in Microsoft Power BI using natural language prompts. Its core value lies in bridging the gap between a user's analytical query (expressed in plain language) and the technical steps required to generate a corresponding chart in Power BI.",
     image:[
       dataFabric,
       dataFabric2,
       dataFabric3,
       dataFabric4,
       dataFabric5,
-      // '../assets/Data-Fabric-photo-3.png',
-      // '../assets/Data-Fabric-photo-4.jpg',
-      // '../assets/Data-Fabric-photo-5.jpg',
+
     ]
 }
 
