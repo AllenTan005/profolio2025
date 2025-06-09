@@ -1,26 +1,43 @@
 <template>
     
-<dialog ref="dialogRef" v-show="dialogState"  class="backdrop:bg-black/20 backdrop:backdrop-blur mx-[18%] my-[7%] modal-dialog
+<dialog ref="dialogRef" v-show="dialogState"  class="backdrop:bg-black/20 backdrop:backdrop-blur
+     mx-[18%] my-[7%]
+      @max-[50rem]/main:mx-[5%] @max-[50rem]/main:my-[10%]
+     modal-dialog
       bg-[#FFFBEB] 
       rounded-lg
       shadow-2xl
-     
-      w-[70%] 
+      w-[70%]  @max-[50rem]/main:w-[90%]
       flex flex-col
       transition-all duration-300 ease-in-out">
-        <div class="modal-header flex  items-center justify-center  ">
-            <div class="w-[30%]   p-6 md:p-8">
+        <div class="modal-header flex  items-center justify-center 
+         @max-[50rem]/main:flex-col
+        ">
+            
+            <div class="w-[30%]   @max-[50rem]/main:flex @max-[50rem]/main:w-auto   p-6 md:p-8">
                 <div v-for="(project, index) in listOfProject" :key="index" class="mb-4">
                     <h2
                     :class="indexOfProject === index ? 'bg-[#BFDBFE] text-[#FFFBEB]' : ''"
-                    class=" p-2 rounded-2xl cursor-pointer font-koulen font-semibold 
+                    class=" p-2 rounded-2xl cursor-pointer font-koulen font-semibold @max-[50rem]/main:text-[13px]
                     text-[#333332] hover:bg-[#BFDBFE] hover:text-[#FFFBEB]"
                     @click="clickProject(project)"
                     >{{ project.title }}</h2>
                  </div>
+                   <div class=" justify-end  mr-4 @min-[50rem]/main:hidden  flex">
+                    <div>
+                         <button class="cursor-pointer" autofocus @click="closeDialog()">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
+                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="w-[70%] border-l-2 border-dashed flex flex-col justify-between p-5">
-                <div class="flex justify-end mr-4">
+            <div class="w-[70%] border-l-2 border-dashed  @max-[50rem]/main:border-l-0 
+            @max-[50rem]/main:border-t-2
+            flex flex-col justify-between p-5">
+                <div class="flex justify-end mr-4  @max-[50rem]/main:hidden">
                     <div>
                          <button class="cursor-pointer" autofocus @click="closeDialog()">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-red-500">
@@ -31,10 +48,10 @@
                    
                 </div>
                  <div class="">
-                    <p class="text-[#333332] font-koulen text-[20px] font-bold">
+                    <p class="text-[#333332] font-koulen text-[20px] @max-[50rem]/main:text-[14px]  font-bold">
                         {{ selectedProject.title }}
                     </p>
-                        <p>
+                        <p class="@max-[50rem]/main:text-[13px] ">
                             {{ selectedProject.desc }}
                         </p>
                     </div>
@@ -58,15 +75,19 @@
 </dialog>
 
 
-<div class="bg-work relative min-h-screen  w-full py-10 pl-[10%] pr-[4%]">
+<div class="bg-work relative min-h-screen  w-full py-10 pl-[10%] pr-[4%] flex flex-col justify-center
+ @max-[50rem]/main:flex  @max-[50rem]/main:flex-col   @max-[50rem]/main:justify-around
+">
   <div class="flex  justify-between ml-3">
-        <div class="w-[40%] rotate-[10deg] container-a relative">
-            <img src="../assets/section3-photo-1.svg" class="w-[80%] image" alt="backstage" />
-            <div class="middle flex justify-center  rotate-[10deg] top-[50%] left-[40%] ">
+        <div class="w-[40%] @max-[50rem]/main:w-[70%] rotate-[10deg] container-a relative">
+            <img src="../assets/section3-photo-1.svg" class="w-[80%] @max-[50rem]/main:w-[80%]   image " alt="backstage" />
+            <div class="middle flex justify-center  rotate-[10deg] top-[50%] left-[40%]
+            
+            ">
              <div class="text" @click="clickDialog(0)">More info</div>
             </div>
         </div>
-          <div class="w-[40%]  rotate-[-10deg]  container-b relative">
+          <div class="w-[40%]  @max-[50rem]/main:w-[70%]  rotate-[-10deg]  container-b relative">
             <img src="../assets/section3-photo-2.svg "  class="w-[80%] image" alt="backstage2" />
              <div class="middle flex justify-center  rotate-[-10deg]  top-[50%] left-[40%]">
              <div class="text" @click="clickDialog(1)">More info</div>
@@ -74,25 +95,27 @@
         </div>
     </div>
 <div class="flex justify-around ">
-    <div>
-         <img src="../assets/section-3-smile.svg" class="w-[90%] animate-float " alt="smile" />
+    <div class="  @max-[50rem]/main:flex @max-[50rem]/main:justify-center  ">
+         <img src="../assets/section-3-smile.svg" class="w-[90%] @max-[50rem]/main:w-[60%] animate-float " alt="smile" />
     </div>
        <div class="bg-[#BFDBFE] box-shadow rotate-[2deg] flex items-center justify-center ml-8">
-            <p class="font-Kantumruy font-bold text-[#FFFBEB] text-[40px] px-4 stroke-text">Work</p>
+            <p class="font-Kantumruy font-bold 
+            text-[#FFFBEB] text-[40px] px-4 stroke-text
+            @max-[50rem]/main:text-[30px] @max-[50rem]/main:px-2
+            ">Work</p>
         </div>
-
-        <div>
-             <img src="../assets/section-3-normal.svg"  class="w-[90%] animate-float2" alt="normal" />
+        <div class=" @max-[50rem]/main:flex @max-[50rem]/main:justify-center">
+             <img src="../assets/section-3-normal.svg"  class="w-[90%]  @max-[50rem]/main:w-[60%]  animate-float2" alt="normal" />
         </div>
     </div>
-    <div class="flex  justify-between ml-3">
-        <div class="w-[40%] rotate-[-10deg]  container-c relative">
+    <div class="flex  justify-between ml-3 ">
+        <div class="w-[40%]  @max-[50rem]/main:w-[70%] rotate-[-10deg]  container-c relative">
             <img src="../assets/section3-photo-3.svg" class="w-[80%]  image" alt="backstage"  />
                 <div class="middle flex justify-center  rotate-[-10deg] top-[50%] left-[40%]">
              <div class="text"  @click="clickDialog(2)">More info</div>
             </div>
         </div>
-          <div class="w-[40%]  rotate-[10deg]  container-d relative">
+          <div class="w-[40%]  @max-[50rem]/main:w-[70%]    rotate-[10deg]  container-d relative">
             <img src="../assets/section3-photo-4-2.svg"  class="w-[80%]  image" alt="backstage2" />
                <div class="middle flex justify-center  rotate-[10deg]  top-[50%] left-[40%]">
              <div class="text" @click="clickDialog(3)">More info</div>
@@ -292,6 +315,8 @@ const closeDialog = () => {
   text-align: center;
 }
 
+
+
 .text {
 cursor: pointer;
   border-radius:10px;
@@ -302,6 +327,22 @@ cursor: pointer;
   padding: 16px 32px;
 
 }
+
+  
+@container main (width < 50rem) {
+        .text{
+          cursor: pointer;
+          border-radius:10px;
+          border: #333332 1px solid;
+          background-color: #BFDBFE;
+          color: #FFFBEB;
+          font-size: 16px;
+          padding: 8px 12px;
+        }
+        .box-shadow{
+          box-shadow: -5px 5px #333332;
+        }
+    }
 
 .container-a:hover .image {
   opacity: 0.3;

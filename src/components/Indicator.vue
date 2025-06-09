@@ -1,7 +1,8 @@
 <template>
     <div class="w-[5%] flex flex-col items-center justify-center border-l 
     border-slate-600 h-screen fixed top-0 right-0
-    @max-[50rem]/main:bottom-0   @max-[50rem]/main:justify-end  @max-[50rem]/main:border-l-0 
+     @max-[50rem]/main:flex-row @max-[50rem]/main:hidden
+    @max-[50rem]/main:bottom-0  @max-[50rem]/main:left-0  @max-[50rem]/main:justify-end  @max-[50rem]/main:border-l-0 
     @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto
     ">
         <p class="text-orentation @max-[50rem]/main:text-horizontal font-koulen">
