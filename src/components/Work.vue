@@ -112,8 +112,8 @@ import dataFabric3 from '../assets/Data-Fabric-photo-3.png';
 import dataFabric4 from '../assets/Data-Fabric-photo-4.jpg';
 import dataFabric5 from '../assets/Data-Fabric-photo-5.jpg';
 
-import pboxphoto2 from  '../assets/PowerBox-photo-2.png';
-import pboxphoto3 from  '../assets/PowerBox-photo-3.png';
+// import pboxphoto2 from  '../assets/PowerBox-photo-2.png';
+// import pboxphoto3 from  '../assets/PowerBox-photo-3.png';
 import appphoto from '../assets/nangang-pop1.jpg'
 import appphoto2 from '../assets/nangang-pop2.jpg'
 import appphoto3 from '../assets/nangang-pop3.jpg'
@@ -135,8 +135,8 @@ const listOfProject = ref([
     desc:"Trend Micro PowerBox: A Secure, Enterprise-Grade Cloud File Exchange Platform From the context and search results, PowerBox appears to be a specialized secure cloud storage and file exchange platform developed by Trend Micro, a global leader in cybersecurity. While it offers functionalities akin to consumer-grade cloud services like Google Drive, its primary differentiator and core value proposition lie in its integrated, robust security features tailored for business and enterprise environments.",
     image:[
         // pboxphoto,
-        pboxphoto2,
-        pboxphoto3
+        // pboxphoto2,
+        // pboxphoto3
     ]
 },
 {
