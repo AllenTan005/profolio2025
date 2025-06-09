@@ -8,10 +8,13 @@
 </script>
 
 <template>
-  <div class="flex justify-between">
-    <FirstSection  />
-      <LeftNav  />
-    <Indicator  />
+  <div class="@container/main">
+    <div class="flex ustify-between ">
+      <FirstSection  />
+        <LeftNav  />
+      <Indicator  />
+  </div>
+
   </div>
 
 </template>

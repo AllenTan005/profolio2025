@@ -1,6 +1,10 @@
 <template>
-    <div class="w-[5%] flex flex-col items-center justify-center border-l border-slate-600  bg-top fixed top-0 right-0">
-        <p class="text-orentation font-koulen">
+    <div class="w-[5%] flex flex-col items-center justify-center border-l 
+    border-slate-600 h-screen fixed top-0 right-0
+    @max-[50rem]/main:bottom-0   @max-[50rem]/main:justify-end  @max-[50rem]/main:border-l-0 
+    @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto
+    ">
+        <p class="text-orentation @max-[50rem]/main:text-horizontal font-koulen">
             {{ pageStore.pageCount }}/04
         </p>
     </div>
@@ -32,11 +36,9 @@ const pageStore = usePageStore();
  .text-orentation{
     writing-mode: vertical-rl;
  }
-.bg-top{
-  /* background: url('../assets/Grid.png') #BFDBFE;*/
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-}
+  .text-horizontal{
+    writing-mode:horizontal-tb;
+ }
+
 
 </style>

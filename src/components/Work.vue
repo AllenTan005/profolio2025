@@ -44,7 +44,7 @@
                             Prev
                       </button>
                       <img :src="selectedImage" alt="img"
-                      :class="selectedProject.title === 'App' ? 'h-[190px] ' :'w-[80%] max-h-[200px]'" />
+                      :class="selectedProject.title === '瓶蓋工廠-App' ? 'h-[190px] ' :'w-[80%] max-h-[200px]'" />
                       <button @click="nextImage" class="bg-[#BFDBFE] text-[#FFFBEB] font-koulen text-[20px] font-semibold rounded-2xl p-2 ml-3 max-h-[50px]">
                             Next
                       </button>

@@ -1,7 +1,8 @@
 <template>
-        <div class=" flex flex-col items-center border-r border-slate-600 bg-top w-[10%]  fixed top-0 left-0">
-            <img src="../assets/logo-allen.svg" alt="logo" class="mb-5 mt-5 w-[30%] " />
-            <div class="flex flex-col items-center justify-around">
+        <div class=" flex flex-col items-center border-r border-slate-600  w-[10%]  fixed top-0 left-0 h-screen
+        @max-[50rem]/main:flex-row   @max-[50rem]/main:border-r-0   @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto">
+            <img src="../assets/logo-allen.svg" alt="logo" class="mb-5 mt-5 w-[30%]  @max-[50rem]/main:w-[5%]   @max-[50rem]/main:mt-0" />
+            <div class="flex flex-col  items-center justify-around  @max-[50rem]/main:flex-row ">
                 <div 
                 :class="pageStore.pageId === 'home' ? 'bg-[#FFFBEB] rounded-[20px] text-[#BFDBFE]' : ''"
                 class="flex flex-col items-center justify-center mb-5 py-2 px-4 cursor-pointer
@@ -30,7 +31,6 @@
                   py-2 px-4 cursor-pointer hover:bg-[#FECACA] hover:text-[#FFFBEB] hover:rounded-[20px]">
                     <p class="text font-koulen">Contact</p>
                 </div>
-
             </div>
         </div>
 </template>
