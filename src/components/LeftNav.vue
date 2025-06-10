@@ -35,7 +35,7 @@
                     <p class="text font-koulen">Contact</p>
                 </div>
             </div>
-            <div class="font-koulen">
+            <div class="font-koulen hidden  @max-[50rem]/main:block">
                 {{ pageStore.pageCount }}/04
             </div>
         </div>
