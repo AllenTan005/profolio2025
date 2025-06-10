@@ -1,28 +1,29 @@
 <template>
    
-    <div class="flex flex-col  bg-top relative min-h-screen w-full py-10 @max-[50rem]/main:justify-center ">
+    <div class="flex flex-col  bg-top relative min-h-screen w-full py-10 @max-[50rem]/main:justify-around ">
           
         <div class="flex justify-center">
-            <p class="text-[#FFFBEB] text-center font-bold text-[64px] @max-[50rem]/main:text-[30px] font-Kantumruy">Allen Tan</p>
+            <p class="text-[#FFFBEB] text-center font-bold text-[64px]
+             @max-[50rem]/main:text-[40px] font-Kantumruy">Allen Tan</p>
         </div>
         
         <div class="flex  justify-around">
           <div class="flex justify-center">
-            <img src="../assets/photo-1.svg" alt="hello" class="animate-float w-[80%]  @max-[50rem]/main:w-[50%]" />
+            <img src="../assets/photo-1.svg" alt="hello" class="animate-float w-[80%]  @max-[50rem]/main:w-[65%]" />
           </div>
           <div class="flex justify-center">
-            <img src="../assets/photo-2.svg" alt="dev" class="w-[80%]  @max-[50rem]/main:w-[50%]" />
+            <img src="../assets/photo-2.svg" alt="dev" class="w-[80%]  @max-[50rem]/main:w-[65%]" />
           </div>
         </div>
          <div class="flex justify-around items-center relative ">
           <div class="flex justify-center">
-            <img src="../assets/photo-3.svg" alt="hastag" class="w-[90%]  @max-[50rem]/main:w-[50%]" />
+            <img src="../assets/photo-3.svg" alt="hastag" class="w-[90%]  @max-[50rem]/main:w-[65%]" />
           </div>
           <div class="absolute left-[35%] top-[-100%]">
-             <img src="../assets/me-allen.png" alt="me" class="w-[45%]" />
+             <img src="../assets/me-allen.png" alt="me" class="w-[45%] @max-[50rem]/main:w-[55%]" />
           </div>
           <div class="flex justify-center">
-            <img src="../assets/photo-4.svg" alt="ready?" class="w-[90%]  @max-[50rem]/main:w-[50%] animate-float2" />
+            <img src="../assets/photo-4.svg" alt="ready?" class="w-[90%]  @max-[50rem]/main:w-[65%] animate-float2" />
           </div>
         </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
         <div class=" flex flex-col items-center border-r border-slate-600  w-[10%]  fixed top-0 left-0 h-screen
-        @max-[50rem]/main:flex-row   @max-[50rem]/main:border-r-0   @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto
+        @max-[50rem]/main:flex-row @max-[50rem]/main:items-center  @max-[50rem]/main:border-r-0 @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto
            @max-[50rem]/main:p-3
         ">
             <img src="../assets/logo-allen.svg" alt="logo" class="mb-5 mt-5 w-[30%] 
@@ -34,6 +34,9 @@
                   py-2 px-4 cursor-pointer hover:bg-[#FECACA] hover:text-[#FFFBEB] hover:rounded-[20px]">
                     <p class="text font-koulen">Contact</p>
                 </div>
+            </div>
+            <div class="font-koulen">
+                {{ pageStore.pageCount }}/04
             </div>
         </div>
 </template>
