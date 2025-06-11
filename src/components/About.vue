@@ -1,7 +1,7 @@
 <template>
         <div class="bg-about relative min-h-screen  w-full py-10 pl-[10%] 
-        pr-[4%] flex flex-col justify-center
-    @max-[50rem]/main:justify-end
+            pr-[4%] flex flex-col justify-center
+            @max-[50rem]/main:justify-end
         ">
 
         <div class="flex   justify-between      @max-[50rem]/main:mt-5">
@@ -30,7 +30,7 @@
                 rounded-t-lg p-4 mr-3 cursor-pointer active:scale-[0.98] @max-[50rem]/main:text-sm"
                     @click="page = '3'"
                 >
-                       2023-present
+                    2023-present
                 </div>
             </div>
 
@@ -69,7 +69,7 @@
                     <p class="text-[20px] @max-[50rem]/main:text-[12px] @max-[50rem]/main:leading-6 text-[#FFFBEB]  font-koulen">
                        After graduating from university, I began my first full-time role as a Front-End Developer at Retalling Data Inc., a company specializing in data analysis. 
                        During my tenure,
-                        I was responsible for building user interfaces and significantly enhanced my skills in Vue, Tailwind CSS, and advanced CSS.
+                        I was responsible for building user interfaces and significantly enhanced my skills in Vue, Tailwind CSS, and intergrate API.
                     </p>
                     </div>
                     </div>
