@@ -20,7 +20,7 @@
                     :class="indexOfProject === index ? 'bg-[#BFDBFE] text-[#FFFBEB]' : ''"
                     class=" p-2 rounded-2xl cursor-pointer font-koulen font-semibold @max-[50rem]/main:text-[13px]
                     text-[#333332] hover:bg-[#BFDBFE] hover:text-[#FFFBEB]"
-                    @click="clickProject(project)"
+                    @click="clickProject(project, index)"
                     >{{ project.title }}</h2>
                  </div>
                    <div class=" justify-end  mr-4 @min-[50rem]/main:hidden  flex">
@@ -221,9 +221,10 @@ const prevImage = () => {
 
 }
 
-const clickProject = (project) =>{
+const clickProject = (project,index) =>{
         selectedProject.value = project;
          selectedImage.value =selectedProject.value.image[0]
+             indexOfProject.value = index
 }
 
 const clickDialog = (index) => {
