@@ -6,7 +6,7 @@
     @max-[50rem]/main:w-[100%] @max-[50rem]/main:h-auto
     ">
         <p class="text-orentation @max-[50rem]/main:text-horizontal font-koulen">
-            {{ pageStore.pageCount }}/04
+            {{ pageStore.pageCount }}/05
         </p>
     </div>
 </template>

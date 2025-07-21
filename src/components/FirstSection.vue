@@ -9,9 +9,13 @@
        <div id="work" class="@container section flex justify-center w-[100%] snap-always snap-center">
         <Work />
     </div>
+         <div id="side" class="@container section flex justify-center w-[100%] snap-always snap-center">
+        <Sideproject />
+    </div>
        <div id="contact" class="@container section flex justify-center w-[100%] snap-always snap-center">
         <Contact />
     </div>
+   
     </div>
 </template>
 
@@ -21,6 +25,8 @@ import About from '../components/About.vue';
 import Intro from '../components/Intro.vue';
 import Work from '../components/Work.vue'
 import Contact from '../components/Contact.vue'
+import Sideproject from './sideproject.vue';
+import Test from '../components/test.vue'
 import { usePageStore } from '../store/page.js'; 
 
 const pageStore = usePageStore();
@@ -68,8 +74,11 @@ onMounted(() =>{
         else if(entry.target.id === 'work'){
           pageStore.pageCount = '03'   
          }
-          else if(entry.target.id === 'contact'){
+         else if(entry.target.id === 'side'){
           pageStore.pageCount = '04'   
+         }
+          else if(entry.target.id === 'contact'){
+          pageStore.pageCount = '05'   
          }
         activeSection.value = entry.target.id;
         console.log(`Active section: ${pageStore.pageId}`);
@@ -100,7 +109,11 @@ watch([pageStore],() =>{
       pageStore.pageId = 'about';
     }else if(pageStore.pageCount === '03'){
       pageStore.pageId = 'work';
-    }else if(pageStore.pageCount === '04'){
+    }
+    else if(pageStore.pageCount === '04'){
+      pageStore.pageId = 'side';
+    }
+    else if(pageStore.pageCount === '05'){
       pageStore.pageId = 'contact';
     }
    

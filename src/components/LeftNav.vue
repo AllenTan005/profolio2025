@@ -28,6 +28,12 @@
                  hover:bg-[#FECACA] hover:text-[#FFFBEB] hover:rounded-[20px]  @max-[50rem]/main:mb-0">
                     <p class="text font-koulen">Work</p>
                 </div>
+                 <div
+                :class="pageStore.pageId === 'side' ? 'bg-[#BFDBFE] rounded-[20px] text-[#FFFBEB]' : ''"
+                @click="pageStore.clickPage('side')" class="flex flex-col items-center justify-center mb-5 py-2 px-4 cursor-pointer
+                 hover:bg-[#FECACA] hover:text-[#FFFBEB] hover:rounded-[20px]  @max-[50rem]/main:mb-0">
+                    <p class="text font-koulen">Side Project</p>
+                </div>
                  <div  
                    :class="pageStore.pageId === 'contact' ? 'bg-[#FFFBEB] rounded-[20px] text-[#BFDBFE] ' : ''"
                  @click="pageStore.clickPage('contact')" class="flex flex-col items-center justify-center mb-5 
@@ -36,7 +42,7 @@
                 </div>
             </div>
             <div class="font-koulen hidden  @max-[50rem]/main:block">
-                {{ pageStore.pageCount }}/04
+                {{ pageStore.pageCount }}/05
             </div>
         </div>
 </template>
