@@ -25,7 +25,7 @@ import About from '../components/About.vue';
 import Intro from '../components/Intro.vue';
 import Work from '../components/Work.vue'
 import Contact from '../components/Contact.vue'
-import Sideproject from './sideproject.vue';
+import Sideproject from '../components/Sideproject.vue';
 import Test from '../components/test.vue'
 import { usePageStore } from '../store/page.js'; 
 
