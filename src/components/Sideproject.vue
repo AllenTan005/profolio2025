@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-work relative min-h-screen  w-full py-10 pl-[10%] pr-[4%] 
+    <div class="bg-work relative   @min-[50rem]/main:min-h-screen @max-[50rem]/main:h-[150vh] w-full py-10 pl-[10%] pr-[4%] 
   @max-[50rem]/main:justify-around
 ">
         <div class="flex justify-center mt-5">
@@ -17,14 +17,14 @@
 
           
         </div>
-           <div class="flex flex-wrap justify-between items-center mt-10 p-3">
-                <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%] box-shadow2 p-4">
+           <div class="flex flex-row flex-wrap  @max-[50rem]/main:flex-col justify-between items-center mt-10 p-3">
+                <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%]  @max-[50rem]/main:w-[70%] box-shadow2 p-4">
                     <div class="rounded-lg">
                         <img :src="tictoe" class="rounded-md " alt="" />
                     </div>
                     <p class="font-koulen text-lg mt-5">tic-toe</p>
                     <div class="border-t border-slate-500">
-                        <p class="font-koulen mt-3">
+                        <p class="font-koulen mt-3  @max-[50rem]/main:text-[13px]">
                             React, Node.js, Express.js, MongoDB, Render, Websocket
                         </p>
                     </div>
@@ -37,13 +37,13 @@
                             </svg>
                      </button>
                 </div>
-                  <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%] box-shadow2 p-4">
+                  <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%]  @max-[50rem]/main:w-[70%] @max-[50rem]/main:mt-6  box-shadow2 p-4">
                     <div class="flex justify-center">
                         <img :src="Teda"  class="rounded-md w-[88%]" alt="" />
                     </div>
                       <p class="font-koulen text-lg  mt-5">Teda</p>
                        <div class="border-t border-slate-500">
-                       <p class="font-koulen mt-3">
+                       <p class="font-koulen mt-3  @max-[50rem]/main:text-[13px]">
                             React, Node.js, Express.js, MongoDB, Render, Rest API
                         </p>
                         <button class="flex items-center p-2 border-2 border-slate-600 rounded mt-2 bg-red-200 text-white font-koulen cursor-pointer"
@@ -78,7 +78,7 @@ const goToSite = (site) =>{
     background: url('../assets/Grid-blue.png') #FFFBEB;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .box-shadow {
