@@ -10,7 +10,7 @@
           </div>
           <div class="bg-[#FED7AA] box-shadow2  rotate-[-10deg] 
           rounded-4xl @max-[50rem]/main:rounded-xl  py-3 flex justify-center mr-8 active:scale-[0.98] ">
-                 <img src="../assets/dj-hand.svg" alt="hand" class="w-[60%] @max-[50rem]/main:w-[30%]" />
+                 <img src="../assets/dj-hand.svg" alt="hand" loading="lazy" decoding="async" class="w-[60%] @max-[50rem]/main:w-[30%]" />
           </div>
         </div>
         <div class=" mt-5 p-7" >
@@ -41,7 +41,7 @@
                  <!-- <transition name="slide-fade"> -->
                     <div class="flex" v-if="page === '1'">
                     <div class="w-[40%]  flex flex-col  items-center justify-center">
-                        <img src="../assets/raise-up.png" alt="logo" class="w-[60%]"/>
+                        <img src="../assets/raise-up.png" alt="logo" loading="lazy" decoding="async" class="w-[60%]"/>
                     </div>
                     <div class="w-[60%] py-5">
                     <h1 class="text-[35px] @max-[50rem]/main:text-[20px] text-[#FFFBEB]  font-koulen font-bold">
@@ -59,7 +59,7 @@
                           <div class="flex"  v-else-if="page === '2'">
                     <div class="w-[40%]  flex flex-col  items-center justify-center">
                     
-                            <img src="../assets/retailing-data.svg" alt="logo" class="w-[60%]"/>
+                            <img src="../assets/retailing-data.svg" alt="logo" loading="lazy" decoding="async" class="w-[60%]"/>
                         
                     </div>
                     <div class="w-[60%] py-5">
@@ -75,7 +75,7 @@
                     </div>
                   <div class="flex" v-else-if="page === '3'">
                     <div class="w-[40%] flex flex-col  items-center justify-center">
-                        <img src="../assets/trend-logo.svg" alt="logo" class="w-[80%]"/>
+                        <img src="../assets/trend-logo.svg" alt="logo" loading="lazy" decoding="async" class="w-[80%]"/>
                     </div>
                     <div class="w-[60%] py-5">
                     <h1 class="text-[35px]  @max-[50rem]/main:text-[20px] text-[#FFFBEB]  font-koulen font-bold">

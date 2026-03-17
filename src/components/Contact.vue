@@ -7,7 +7,7 @@
                   rounded-4xl p-3 flex justify-center mr-8 active:scale-[0.98]
                   
                   ">
-            <img src="../assets/rocket.svg" alt="hand" class="w-[60%] rotate-[60deg] @max-[50rem]/main:w-[80%] " />
+            <img src="../assets/rocket.svg" alt="hand" loading="lazy" decoding="async" class="w-[60%] rotate-[60deg] @max-[50rem]/main:w-[80%] " />
           </div>
           <div class="bg-[#FFFBEB] box-shadow rotate-[10deg] flex items-center justify-center ml-8">
             <p class="font-Kantumruy font-bold text-[#BFDBFE] text-[40px]
@@ -18,7 +18,7 @@
             </p>
           </div>
           <div class="rotate-[10deg] flex items-center justify-center ml-8">
-           <img src="../assets/Contact-smile.svg" alt="hand" class="w-[60%]  @max-[50rem]/main:w-[80%]" />
+           <img src="../assets/Contact-smile.svg" alt="hand" loading="lazy" decoding="async" class="w-[60%]  @max-[50rem]/main:w-[80%]" />
           </div>
         </div>
         <div class="flex justify-center mt-9 p-6">

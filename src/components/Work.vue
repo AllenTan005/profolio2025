@@ -56,13 +56,20 @@
                         </p>
                     </div>
                       <!-- carousel -->
-                    <div v-if="selectedProject.image.length > 0" class="flex items-center mt-4">
-                      <button @click="prevImage" class="bg-[#FCA5A5] text-[#FFFBEB] font-koulen text-[20px] font-semibold rounded-2xl p-2 mr-2 max-h-[50px]">
+                    <div v-if="selectedProject.image.length > 0" class="mt-4 flex items-center gap-3 @max-[50rem]/main:gap-2">
+                      <button @click="prevImage" class="max-h-[50px] shrink-0 rounded-2xl bg-[#FCA5A5] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB]">
                             Prev
                       </button>
-                      <img :src="selectedImage" alt="img"
-                      :class="selectedProject.title === '瓶蓋工廠-App' ? 'h-[190px] ' :'w-[80%] max-h-[200px]'" />
-                      <button @click="nextImage" class="bg-[#BFDBFE] text-[#FFFBEB] font-koulen text-[20px] font-semibold rounded-2xl p-2 ml-3 max-h-[50px]">
+                      <div class="flex h-[220px] flex-1 items-center justify-center overflow-hidden rounded-2xl border border-[#333332]/15 bg-white/70 p-3 @max-[50rem]/main:h-[180px] @max-[50rem]/main:p-2">
+                        <img
+                          :src="selectedImage"
+                          alt="img"
+                          loading="lazy"
+                          decoding="async"
+                          class="h-full w-full object-contain"
+                        />
+                      </div>
+                      <button @click="nextImage" class="max-h-[50px] shrink-0 rounded-2xl bg-[#BFDBFE] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB]">
                             Next
                       </button>
                       
@@ -80,7 +87,7 @@
 ">
   <div class="flex  justify-between ml-3">
         <div class="w-[40%] @max-[50rem]/main:w-[70%] rotate-[10deg] container-a relative">
-            <img src="../assets/section3-photo-1.svg" class="w-[80%] @max-[50rem]/main:w-[80%]   image " alt="backstage" />
+            <img src="../assets/section3-photo-1.svg" class="w-[80%] @max-[50rem]/main:w-[80%]   image " alt="backstage" loading="lazy" decoding="async" />
             <div class="middle flex justify-center  rotate-[10deg] top-[50%] left-[40%]
             
             ">
@@ -88,7 +95,7 @@
             </div>
         </div>
           <div class="w-[40%]  @max-[50rem]/main:w-[70%]  rotate-[-10deg]  container-b relative">
-            <img src="../assets/section3-photo-2.svg "  class="w-[80%] image" alt="backstage2" />
+            <img src="../assets/section3-photo-2.svg "  class="w-[80%] image" alt="backstage2" loading="lazy" decoding="async" />
              <div class="middle flex justify-center  rotate-[-10deg]  top-[50%] left-[40%]">
              <div class="text" @click="clickDialog(1)">More info</div>
             </div>
@@ -96,7 +103,7 @@
     </div>
 <div class="flex justify-around ">
     <div class="  @max-[50rem]/main:flex @max-[50rem]/main:justify-center  ">
-         <img src="../assets/section-3-smile.svg" class="w-[90%] @max-[50rem]/main:w-[60%] animate-float " alt="smile" />
+         <img src="../assets/section-3-smile.svg" class="w-[90%] @max-[50rem]/main:w-[60%] animate-float " alt="smile" loading="lazy" decoding="async" />
     </div>
        <div class="bg-[#BFDBFE] box-shadow rotate-[2deg] flex items-center justify-center ml-8">
             <p class="font-Kantumruy font-bold 
@@ -105,18 +112,18 @@
             ">Work</p>
         </div>
         <div class=" @max-[50rem]/main:flex @max-[50rem]/main:justify-center">
-             <img src="../assets/section-3-normal.svg"  class="w-[90%]  @max-[50rem]/main:w-[60%]  animate-float2" alt="normal" />
+             <img src="../assets/section-3-normal.svg"  class="w-[90%]  @max-[50rem]/main:w-[60%]  animate-float2" alt="normal" loading="lazy" decoding="async" />
         </div>
     </div>
     <div class="flex  justify-between ml-3 ">
         <div class="w-[40%]  @max-[50rem]/main:w-[70%] rotate-[-10deg]  container-c relative">
-            <img src="../assets/section3-photo-3.svg" class="w-[80%]  image" alt="backstage"  />
+            <img src="../assets/section3-photo-3.svg" class="w-[80%]  image" alt="backstage" loading="lazy" decoding="async"  />
                 <div class="middle flex justify-center  rotate-[-10deg] top-[50%] left-[40%]">
              <div class="text"  @click="clickDialog(2)">More info</div>
             </div>
         </div>
           <div class="w-[40%]  @max-[50rem]/main:w-[70%]    rotate-[10deg]  container-d relative">
-            <img src="../assets/section3-photo-4-2.svg"  class="w-[80%]  image" alt="backstage2" />
+            <img src="../assets/section3-photo-4-2.svg"  class="w-[80%]  image" alt="backstage2" loading="lazy" decoding="async" />
                <div class="middle flex justify-center  rotate-[10deg]  top-[50%] left-[40%]">
              <div class="text" @click="clickDialog(3)">More info</div>
             </div>

@@ -9,21 +9,21 @@
         
         <div class="flex  justify-around">
           <div class="flex justify-center">
-            <img src="../assets/photo-1.svg" alt="hello" class="animate-float w-[80%]  @max-[50rem]/main:w-[65%]" />
+            <img src="../assets/photo-1.svg" alt="hello" decoding="async" class="animate-float w-[80%]  @max-[50rem]/main:w-[65%]" />
           </div>
           <div class="flex justify-center">
-            <img src="../assets/photo-2.svg" alt="dev" class="w-[80%]  @max-[50rem]/main:w-[65%]" />
+            <img src="../assets/photo-2.svg" alt="dev" decoding="async" class="w-[80%]  @max-[50rem]/main:w-[65%]" />
           </div>
         </div>
          <div class="flex justify-around items-center relative ">
           <div class="flex justify-center">
-            <img src="../assets/photo-3.svg" alt="hastag" class="w-[90%]  @max-[50rem]/main:w-[65%]" />
+            <img src="../assets/photo-3.svg" alt="hastag" decoding="async" class="w-[90%]  @max-[50rem]/main:w-[65%]" />
           </div>
           <div class="absolute left-[35%] top-[-100%]">
-             <img src="../assets/me-allen.png" alt="me" class="w-[45%] @max-[50rem]/main:w-[55%]" />
+             <img src="../assets/me-allen-comp.png" alt="me" decoding="async" class="w-[45%] @max-[50rem]/main:w-[55%]" />
           </div>
           <div class="flex justify-center">
-            <img src="../assets/photo-4.svg" alt="ready?" class="w-[90%]  @max-[50rem]/main:w-[65%] animate-float2" />
+            <img src="../assets/photo-4.svg" alt="ready?" decoding="async" class="w-[90%]  @max-[50rem]/main:w-[65%] animate-float2" />
           </div>
         </div>
         </div>

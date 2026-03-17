@@ -20,7 +20,7 @@
            <div class="flex flex-row flex-wrap  @max-[50rem]/main:flex-col justify-between items-center mt-10 p-3">
                 <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%]  @max-[50rem]/main:w-[70%] box-shadow2 p-4">
                     <div class="rounded-lg">
-                        <img :src="tictoe" class="rounded-md " alt="" />
+                        <img :src="tictoe" class="rounded-md " alt="" loading="lazy" decoding="async" />
                     </div>
                     <p class="font-koulen text-lg mt-5">tic-toe</p>
                     <div class="border-t border-slate-500">
@@ -39,7 +39,7 @@
                 </div>
                   <div class="rounded-md border-rose-50 bg-[#BFDBFE] shadow w-[40%]  @max-[50rem]/main:w-[70%] @max-[50rem]/main:mt-6  box-shadow2 p-4">
                     <div class="flex justify-center">
-                        <img :src="Teda"  class="rounded-md w-[88%]" alt="" />
+                        <img :src="Teda"  class="rounded-md w-[88%]" alt="" loading="lazy" decoding="async" />
                     </div>
                       <p class="font-koulen text-lg  mt-5">Teda</p>
                        <div class="border-t border-slate-500">
