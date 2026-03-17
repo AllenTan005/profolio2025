@@ -57,7 +57,7 @@
                     </div>
                       <!-- carousel -->
                     <div v-if="selectedProject.image.length > 0" class="mt-4 flex items-center gap-3 @max-[50rem]/main:gap-2">
-                      <button @click="prevImage" class="max-h-[50px] shrink-0 rounded-2xl bg-[#FCA5A5] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB]">
+                      <button @click="prevImage" class="max-h-[50px] shrink-0 cursor-pointer select-none rounded-2xl bg-[#FCA5A5] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB] active:scale-[0.98]">
                             Prev
                       </button>
                       <div class="flex h-[220px] flex-1 items-center justify-center overflow-hidden rounded-2xl border border-[#333332]/15 bg-white/70 p-3 @max-[50rem]/main:h-[180px] @max-[50rem]/main:p-2">
@@ -69,7 +69,7 @@
                           class="h-full w-full object-contain"
                         />
                       </div>
-                      <button @click="nextImage" class="max-h-[50px] shrink-0 rounded-2xl bg-[#BFDBFE] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB]">
+                      <button @click="nextImage" class="max-h-[50px] shrink-0 cursor-pointer select-none rounded-2xl bg-[#BFDBFE] p-2 font-koulen text-[20px] font-semibold text-[#FFFBEB] active:scale-[0.98]">
                             Next
                       </button>
                       
